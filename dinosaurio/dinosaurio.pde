@@ -1,3 +1,6 @@
+// un texto
+
+
 class jugador
 {  
   int puntaje;
