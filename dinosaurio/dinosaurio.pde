@@ -1,13 +1,28 @@
-// un texto
+class mundo
+{
+  int cuadros;
+  
+  
+  void colision()
+  {
+  }
+  
+  void dibujar()
+  {
+    
+  }
+}
 
 
-class jugador
+class jugador extends mundo
 {  
   int puntaje;
+  int vida;
   
   jugador()
   {
     puntaje=0;
+    vida=3;
   }
   
   void caminar()
@@ -17,9 +32,15 @@ class jugador
   void saltar()
   {
   }
+  
+  void morir()
+  {
+    vida--;   
+  }
+  
 }
 
-class obstaculo
+class obstaculo extends mundo
 {
   int largo,ancho;
   
@@ -27,6 +48,12 @@ class obstaculo
   {
     largo=l;
     ancho=a;
+    
+  }
+  
+  void chocar(jugador J)
+  {
+     J.morir();
     
   }
   
@@ -45,8 +72,6 @@ void setup()
 void draw()
 {
   jugador player;
- // obstaculo enemy(10,10);
+  obstaculo enemy(10,10);
   
-  
-    
 }
