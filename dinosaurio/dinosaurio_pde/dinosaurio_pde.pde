@@ -1,5 +1,3 @@
-
-  
 carro primero=new carro(0,30,2);
 carro segundo=new carro(300,30,-2);  
   
